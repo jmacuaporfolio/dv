@@ -59,7 +59,7 @@ function type() {
             i++;
         }
     }
-    setTimeout(type, isDeleting ? 50 : 100);
+    setTimeout(type, isDeleting ? 35 : 65);
 }
 
 type();
