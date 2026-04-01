@@ -33,6 +33,11 @@ nav {
     z-index: 100;
 }
 
+nav,
+nav .logo,
+nav .nav-links a {
+    font-family: Helvetica, Arial, sans-serif;
+}
 nav {
     position: fixed;
     top: 0;
