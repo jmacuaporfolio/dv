@@ -1,219 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Joseph M | Portfolio</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-body {
-  background: #0f172a;
-  color: #fff;
-  scroll-behavior: smooth;
-}
-
-/* NAV */
-nav {
-  position: fixed;
-  width: 100%;
-  background: rgba(15,23,42,0.9);
-  padding: 15px 40px;
-  display: flex;
-  justify-content: space-between;
-  z-index: 1000;
-}
-
-nav a {
-  color: white;
-  margin-left: 20px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-nav a:hover {
-  color: #38bdf8;
-}
-
-/* HERO */
-.hero {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 50px;
-}
-
-.hero span {
-  color: #38bdf8;
-}
-
-.btn {
-  margin-top: 20px;
-  padding: 12px 25px;
-  background: #38bdf8;
-  color: black;
-  border-radius: 25px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: white;
-}
-
-/* SECTION */
-section {
-  padding: 80px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-/* ABOUT */
-.about {
-  text-align: center;
-  line-height: 1.6;
-}
-
-/* PROJECTS */
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: #1e293b;
-  padding: 20px;
-  border-radius: 15px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-}
-
-/* CONTACT */
-.contact {
-  text-align: center;
-}
-
-.contact a {
-  display: inline-block;
-  margin: 10px;
-  color: #38bdf8;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #020617;
-}
-
-/* ANIMATION */
-.fade {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: 1s;
-}
-
-.fade.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jmacua Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Jmacua</div>
+        <div class="hamburger">&#9776;</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<nav>
-  <h3>Portfolio</h3>
-  <div>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Hi, I'm Jmacua</h1>
+        <p>I'm deeply passionate about web development. I enjoy experimenting with new frameworks and writing clean, maintainable code.</p>
+        <a href="#projects" class="btn">View Projects</a>
+    </section>
 
-<div class="hero">
-  <h1>Hello, I'm <span>Joseph Macua</span></h1>
-  <p>Aspiring Web Developer</p>
-  <a href="#projects" class="btn">View Projects</a>
-</div>
+    <!-- About Section -->
+    <section id="about" class="section fade-in">
+        <h2>About Me</h2>
+        <p>I love creating interactive web experiences, learning new technologies, and continuously improving my skills in web development.</p>
+    </section>
 
-<section id="about" class="fade">
-  <h2>About Me</h2>
-  <p class="about">
-    I am a passionate web developer focused on building clean and modern websites.
-  </p>
-</section>
+    <!-- Skills Section -->
+    <section id="skills" class="section fade-in">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Git & GitHub</div>
+        </div>
+    </section>
 
-<section id="projects" class="fade">
-  <h2>Projects</h2>
-  <div class="projects">
-    
-    <div class="card">
-      <h3>Project 1</h3>
-      <p>Short description here</p>
-    </div>
+    <!-- Projects Section -->
+    <section id="projects" class="section fade-in">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Project One</h3>
+                <p>A web project built with HTML, CSS, and JavaScript.</p>
+                <a href="#" target="_blank">View</a>
+            </div>
+            <div class="project-card">
+                <h3>Project Two</h3>
+                <p>A responsive React application with modern design.</p>
+                <a href="#" target="_blank">View</a>
+            </div>
+            <div class="project-card">
+                <h3>Project Three</h3>
+                <p>A small interactive website showcasing my skills.</p>
+                <a href="#" target="_blank">View</a>
+            </div>
+        </div>
+    </section>
 
-    <div class="card">
-      <h3>Project 2</h3>
-      <p>Short description here</p>
-    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="section fade-in">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:jmacua@example.com">jmacua@example.com</a></p>
+        <div class="socials">
+            <a href="https://github.com/jmacua" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/jmacua" target="_blank">LinkedIn</a>
+        </div>
+    </section>
 
-    <div class="card">
-      <h3>Project 3</h3>
-      <p>Short description here</p>
-    </div>
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Jmacua. All rights reserved.</p>
+    </footer>
 
-  </div>
-</section>
-
-<section id="contact" class="fade">
-  <h2>Contact</h2>
-  <div class="contact">
-    <p>Email: your@email.com</p>
-    <a href="#">Facebook</a>
-    <a href="#">GitHub</a>
-  </div>
-</section>
-
-<footer>
-  <p>© 2026 Your Name</p>
-</footer>
-
-<script>
-const fades = document.querySelectorAll('.fade');
-
-window.addEventListener('scroll', () => {
-  fades.forEach(el => {
-    const top = el.getBoundingClientRect().top;
-    if (top < window.innerHeight - 100) {
-      el.classList.add('show');
-    }
-  });
-});
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
