@@ -98,12 +98,18 @@ nav .nav-links a:hover {
 
 /* Hero Section */
 .hero {
+.hero {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 50px;
-    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+
+    /* New futuristic background */
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                url('futuristic.jpg') no-repeat center center;
+    background-size: cover;
+
     border: 5px solid #1abc9c;
     border-radius: 20px;
     margin: 50px;
