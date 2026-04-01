@@ -56,26 +56,46 @@ nav .nav-links a:hover {
     cursor: pointer;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 0 20px;
+    justify-content: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+    border: 5px solid #1abc9c;
+    border-radius: 20px;
+    margin: 50px;
 }
 
-.hero h1 {
-    font-size: 48px;
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.hero-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #1abc9c;
+    box-shadow: 0 10px 25px rgba(26, 188, 156, 0.3);
+}
+
+.hero-text h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 28px;
+    color: #1abc9c;
+    min-height: 40px;
     margin-bottom: 20px;
-}
-
-.hero p {
-    max-width: 600px;
-    margin-bottom: 30px;
-    font-size: 18px;
 }
 
 .btn {
@@ -208,6 +228,16 @@ footer {
 
     nav .nav-links.show {
         display: flex;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: 200px;
     }
 
     .projects-container {
