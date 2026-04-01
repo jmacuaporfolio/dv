@@ -65,6 +65,12 @@ nav {
 
     z-index: 1000;
 }
+.logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px; 
+    color: #1abc9c;
+    font-weight: normal;
+}
 nav .logo {
     font-weight: bold;
     font-size: 24px;
