@@ -12,6 +12,14 @@ body {
     line-height: 1.6;
     scroll-behavior: smooth;
 }
+.typed-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255,255,255,0.4);
+}
 
 /* Navbar */
 nav {
